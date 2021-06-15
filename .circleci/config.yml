@@ -6,7 +6,8 @@ jobs:
     machine:
       image: ubuntu-2004:202010-01
     steps:
-      - run: sudo apt install cpu-checker
+      - run: sudo apt update
+      - run: sudo apt install -y cpu-checker
       - run: kvm-ok
 
 orbs:
